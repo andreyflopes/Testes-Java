@@ -40,4 +40,17 @@ public class GeometriaServiceTest {
         assertEquals(33.5, resultado, 0.1);
     }
 
+    @Test
+    public void DeveCalcularVolumeCubo(){
+        GeometriaService geometriaService = new GeometriaService();
+        double resultado = geometriaService.CalcularVolumeCubo(2);
+        assertEquals(8, resultado);
+    }
+
+    @Test
+    public void DeveCalcularVolumeCilindro(){
+        GeometriaService geometriaService = new GeometriaService();
+        double resultado = geometriaService.CalcularVolumeCilindro(2, 2);
+        assertEquals(25.1, resultado, 0.1);
+    }
 }

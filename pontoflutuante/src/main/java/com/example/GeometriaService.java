@@ -20,5 +20,13 @@ public class GeometriaService {
     public double CalcularVolumeEsfera(double raio){
         return (4*Math.PI*Math.pow(raio, 3)/3);
     }
+
+    public double CalcularVolumeCubo(double lado){
+        return Math.pow(lado, 3);
+    }
+
+    public double CalcularVolumeCilindro(double base, double altura){
+        return Math.PI*Math.pow(base, 2)*altura;
+    }
 }
 
